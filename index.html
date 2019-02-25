@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="lib/style.css">
+  <meta charset="utf-8">
+  <title>Smartie Pants</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a onclick="welcomeScreen()" id = "nav-home">Home</a>
+    <a onclick= "myGames()"id = "nav-games">My Games</a>
+    <a onclick="leaderBoard()" id = "nav-board">LeaderBoard</a>
+  </div>
+
+  <div align = "center" class = "toggle-content is-visible" id = "welcome-page">
+    <h1 align="center">Smartie <b>Pants</b></h1><br>
+    <button onclick="register()" id = "register-button">Register</button><br>
+    <button onclick="logIn()" id = "signIn-button">Sign In</button>
+    <button onclick="displayGameForm()" id = "signIn-button">Play Game</button>
+  </div>
+
+  <div class = "toggle-content" id="registration-page">
+    <form onsubmit= "registerUser()">
+      Name:<br>
+      <input type="text" id="name-register">
+      <br>
+      Email:<br>
+      <input type="text" id="email-register">
+      <br>
+      Password:<br>
+      <input type="text" id= "password-register">
+      <br>
+      Password Confirmation:<br>
+      <input type="text" id="password-confirmation-register">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class = "toggle-content" id="logIn-page">
+    <form onsubmit= "logInUser()">
+      Email:<br>
+      <input type="text" id="email-login">
+      <br>
+      Password:<br>
+      <input type="text" id="password-login">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class = "toggle-content" id="game-form">
+    <select id="number-of-questions" placeholder="Number of Questions">
+      <option value ="placeholder" >Number of Questions</option>
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+      <option>40</option>
+    </select>
+    <select id="category" placeholder = "Category">
+      <option value ="placeholder" >Category</option>
+      <option value =9 >General Knowledge</option>
+      <option value =10 >Entertainment: Books</option>
+      <option value =11 >Entertainment: Film</option>
+      <option value =12 >Entertainment: Music</option>
+      <option value =13 >Entertainment: Musicals & Theatres</option>
+      <option value =14 >Entertainment: Television</option>
+      <option value =15 >Entertainment: Video Games</option>
+      <option value =16 >Entertainment: Board Games</option>
+      <option value =17 >Science & Nature</option>
+      <option value =18 >Science: Computers</option>
+      <option value =19 >Science: Math</option>
+      <option value =20 >Mythology</option>
+      <option value =21 >Sports</option>
+      <option value =22 >Geography</option>
+      <option value =23 >History</option>
+      <option value =24 >Politics</option>
+      <option value =25 >Art</option>
+      <option value =26 >Celebrities</option>
+      <option value =27 >Animals</option>
+      <option value =28 >Vehicles</option>
+      <option value =29 >Entertainment: Comics</option>
+      <option value =30 >Science: Gadgets</option>
+      <option value =31 >Entertainment: Japanese Anime & Manga</option>
+      <option value =32 >Entertainment: Cartoon & Animations</option>
+    </select>
+    <select id="difficulty" placeholder="Difficulty">
+      <option value ="placeholder" >Difficulty</option>
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+    <input type= "submit" onclick = "playGame()" value="Submit">
+  </div>
+
+  <div class = "toggle-content" id="display-questions">
+    <div id='category-title'></div>
+    <div id='difficulty-title'></div>
+    <div id='question-number'></div>
+    <div id='actual-question'></div>
+    <button id='mc-1'></button>
+    <button id='mc-2'></button>
+    <button id='mc-3'></button>
+    <button id='mc-4'></button>
+  </div>
+
+
+
+
+
+
+    <script
+    src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+  </script>
+  <!-- <script src="main.bundle.js"></script> -->
+</body>
+<!-- <script src = "/api.js"></script> -->
+<script src = "lib/index.js" ></script>
+</html>
