@@ -50,32 +50,6 @@ h5{
 	display: block;
 }
 
-.display-foods-grid{
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
-	grid-template-rows: auto;
-	grid-gap: 30px;
-}
-
-.add-food{
-	background-color: #D83F87;
-	padding: 20px;
-	border-radius: 12px;
-	text-align: center
-}
-
-#food-item{
-	background-color: #8265A7;
-	padding: 20px;
-	border-radius: 12px;
-	text-align: center
-}
-
-#meal-food-item{
-	background-color: #8265A7;
-	padding: 20px;
-	border-radius: 12px;
-}
 
 button {
   background-color: #44318D;
@@ -94,11 +68,7 @@ button:enabled:hover {
   background-color: #8265A7;
 }
 
-#add-food-title{
-	font-size: 30px;
-	color: white;
-	font-family: "Marker Felt", fantasy;
-}
+
 
 .topnav {
   overflow: hidden;
@@ -122,83 +92,4 @@ button:enabled:hover {
 .topnav a.active {
   background-color: #D83F87;
   color: white;
-}
-
-#searchFoods{
-  width: 30%;
-  padding: 12px 20px;
-  margin: 1% 34%;
-  display: inline-block;
-	text-align: center;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-	font-size: 20px;
-}
-
-#minus {
-	padding: 5px;
-	font-size: 30px;
-}
-
-.table-grid{
-	display: grid;
-	grid-template-columns: repeat(4,1fr);
-	grid-template-rows: auto;
-	grid-gap: 50px;
-}
-
-.table-grid-item{
-	background-color: white;
-	padding: 20px;
-	border-radius: 12px;
-}
-
-#meal-calorie-totals{
-	background-color: white;
-	padding: 20px;
-	border-radius: 12px;
-}
-
-
-#food-item h2 {
-	font-size: 30px;
-	color: white;
-	margin: 0;
-	font-family: "Marker Felt", fantasy;
-}
-
-#food-item h3 {
-	font-size: 15px;
-	color: white;
-	margin: 0;
-	font-family: "Marker Felt", fantasy;
-}
-
-.recipe-grid{
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
-	grid-template-rows: auto;
-	grid-gap: 50px;
-}
-
-.saved-recipe-grid{
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
-	grid-template-rows: auto;
-	grid-gap: 50px;
-}
-
-#calories-consumed {
-	background-color: #8265A7;
-	padding: 20px;
-	border-radius: 12px;
-	text-align: center
-}
-
-#calories-consumed {
-	background-color: #8265A7;
-	padding: 20px;
-	border-radius: 12px;
-	text-align: center
 }
