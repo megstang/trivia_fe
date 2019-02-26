@@ -99,10 +99,15 @@
     <div id='difficulty-title'></div>
     <div id='question-number'></div>
     <div id='actual-question'></div>
-    <button id='mc-1'></button>
-    <button id='mc-2'></button>
-    <button id='mc-3'></button>
-    <button id='mc-4'></button>
+    <button onclick= "checkAnswer('mc-1')" id='mc-1'></button>
+    <button onclick= "checkAnswer('mc-2')" id='mc-2'></button>
+    <button onclick= "checkAnswer('mc-3')" id='mc-3'></button>
+    <button onclick= "checkAnswer('mc-4')" id='mc-4'></button>
+  </div>
+
+  <div class = "toggle-content" id= "play-again-page">
+    <div id='amount-correct'></div>
+    <button onclick="playAgain()">Play Another Game</div>
   </div>
 
 
