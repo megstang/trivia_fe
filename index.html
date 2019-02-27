@@ -11,6 +11,7 @@
     <a onclick="welcomeScreen()" id = "nav-home">Home</a>
     <a onclick= "myGames()"id = "nav-games">My Games</a>
     <a onclick="leaderBoard()" id = "nav-board">LeaderBoard</a>
+    <a onclick="logOut()" id = "log-out"></a>
   </div>
 
   <div align = "center" class = "toggle-content is-visible" id = "welcome-page">
@@ -113,14 +114,8 @@
   </div>
 
   <div class = "toggle-content" id= 'games-played-page'>
-    <table id = "games-played-table">
-      <tr>
-        <th>Category</th>
-        <th>Difficulty</th>
-        <th>Correct</th>
-        <th>Percent</th>
-      </tr>
-    </table>
+    <h2 align = "center" id = 'error-must-log-in'></h2>
+    <table id = "games-played-table"></table>
   </div>
 
     <script
