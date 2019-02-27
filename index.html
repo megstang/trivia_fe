@@ -27,8 +27,10 @@
       <input placeholder = "Email" type="text" id="email-register">
       <br><br>
       <input placeholder = "Password" type="password" id= "password-register">
+      <input type="checkbox" onclick="checkbox('password-register')">Show Password
       <br><br>
       <input placeholder = "Password Confirmation" type="password" id="password-confirmation-register">
+      <input type="checkbox" onclick="checkbox('password-confirmation-register')">Show Password
       <br><br>
       <button onclick="registerUser()">Register</button>
   </div>
@@ -39,7 +41,7 @@
       <br><br>
       <input  placeholder= "Password" type="password" id="password-login">
       <br><br>
-      <input type="checkbox" onclick="checkbox()">Show Password
+      <input type="checkbox" onclick="checkbox('password-login')">Show Password
       <br><br>
       <button onclick="logInUser()">Log In</button>
   </div>
