@@ -27,8 +27,10 @@
       <input placeholder = "Email" type="text" id="email-register">
       <br><br>
       <input placeholder = "Password" type="password" id= "password-register">
+      <input type="checkbox" onclick="checkbox('password-register')">Show Password
       <br><br>
       <input placeholder = "Password Confirmation" type="password" id="password-confirmation-register">
+      <input type="checkbox" onclick="checkbox('password-confirmation-register')">Show Password
       <br><br>
       <button onclick="registerUser()">Register</button>
   </div>
@@ -39,7 +41,7 @@
       <br><br>
       <input  placeholder= "Password" type="password" id="password-login">
       <br><br>
-      <input type="checkbox" onclick="checkbox()">Show Password
+      <input type="checkbox" onclick="checkbox('password-login')">Show Password
       <br><br>
       <button onclick="logInUser()">Log In</button>
   </div>
@@ -95,9 +97,8 @@
   </div>
 
   <div class = "toggle-content" id="display-questions">
-    <span align = "center" id='category-title'></span>
-    <span id='difficulty-title'>></span>
-    <span id='number-correct'>></span>
+    <h2 align = "right"><g id='number-correct'></g></h2>
+    <h2 align = "center" id='category-title'></h2>
     <span align = "center"><div id='question-number'></div>
     <div  id='actual-question'></div></span>
     <div align = "center"><button onclick= "checkAnswer('mc-1')" id='mc-1'></button></div>
@@ -107,25 +108,25 @@
   </div>
 
   <div class = "toggle-content" id= "play-again-page">
-    <div align = "center" id='amount-correct'></div>
+    <h1 align = "center">Game Summary</h1>
+    <h2 align = "center" ><b>You Scored</b></h2>
+    <h2 align = "center" ><g id='amount-correct'></g></h2>
+    <h2 align = "center" ><b>Points</b></h2>
+    <br>
     <div align = "center"><button onclick="playAgain()">Play Another Game</button></div>
   </div>
 
   <div class = "toggle-content" id= 'games-played-page'>
-    <h2 align = "center" id = 'error-must-log-in'></h2>
+    <h2 align = "center" id="my-games"></h2>
     <table id = "games-played-table"></table>
   </div>
 
+  <h2 align = "center" id = 'error-must-log-in'></h2>
+  <h2 align = "center" id = 'lb-must-log-in'></h2>
+
   <div class = "toggle-content" id= 'leaderboard-page'>
-    <h2 align = "center" id = 'lb-must-log-in'></h2>
-    <table id = "leaderboard-table">
-      <tr id = "headers-lb">
-        <th>Rank</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Total Points</th>
-      </tr>`
-    </table>
+    <h2 align = "center" id="my-leaderboard"></h2>
+    <table id = "leaderboard-table"></table>
   </div>
 
     <script
