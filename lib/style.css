@@ -112,3 +112,7 @@ button:enabled:hover {
 #actual-question{
 	font-size: 30px;
 }
+#amount-correct{
+	top: 100px;
+	font-size: 30px;
+}
