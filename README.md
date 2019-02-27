@@ -43,9 +43,9 @@ Leaderboard page:
 
 
 ## Set Up
-This app is currently only working locally, so you must also run the backend locally. Visit https://github.com/mstang15/quantified-self-be and follow the following directions: 
+You can run this app locally by running the following commands:
 1. git clone <paste repo link for trivia_fe>
-2. cd quantified_self
+2. cd trivia_fe
 3. npm install 
 4. open index.html
 
