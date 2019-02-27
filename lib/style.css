@@ -2,6 +2,19 @@ body {
 background-color: yellow;
 }
 
+#game-form select {
+   border: 0;
+   color: black;
+   background: white;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 378px;
+   *width: 350px;
+   *background: #58B14C;
+   -webkit-appearance: none;
+}
+
 h1 {
 	margin-top: 150px;
 	font-size: 80px;
