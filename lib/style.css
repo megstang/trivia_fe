@@ -57,6 +57,7 @@ button {
   color: white;
   padding: 15px 32px;
   text-align: center;
+	align-items: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -98,5 +99,16 @@ button:enabled:hover {
 	font-size: 80px;
 }
 #difficulty-title{
+	font-size: 30px;
+}
+
+#question-number{
+	font-size: 30px;
+	width: auto;
+	length: auto;
+	background-color: white;
+	color: purple;
+}
+#actual-question{
 	font-size: 30px;
 }
