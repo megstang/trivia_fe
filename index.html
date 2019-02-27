@@ -45,7 +45,8 @@
       <button onclick="logInUser()">Log In</button>
   </div>
 
-  <div class = "toggle-content" id="game-form">
+  <div align="center" class = "toggle-content" id="game-form">
+    <h1 align = "center">Choose Your Game</h1>
     <select id="number-of-questions" placeholder="Number of Questions">
       <option value ="placeholder" >Number of Questions</option>
       <option>10</option>
@@ -53,7 +54,7 @@
       <option>30</option>
       <option>40</option>
     </select>
-    <br>
+    <br><br>
     <select id="category" placeholder = "Category">
       <option value ="placeholder" >Category</option>
       <option value =9 >General Knowledge</option>
@@ -81,37 +82,33 @@
       <option value =31 >Entertainment: Japanese Anime & Manga</option>
       <option value =32 >Entertainment: Cartoon & Animations</option>
     </select>
-    <br>
+    <br><br>
     <select id="difficulty" placeholder="Difficulty">
       <option value ="placeholder" >Difficulty</option>
       <option>Easy</option>
       <option>Medium</option>
       <option>Hard</option>
     </select>
-    <br><br>
-    <input type= "submit" onclick = "playGame()" value="Submit">
+    <br><br><br>
+    <button type= "submit" onclick = "playGame()">Submit</button>
   </div>
 
   <div class = "toggle-content" id="display-questions">
-    <div id='category-title'></div>
-    <div id='difficulty-title'></div>
-    <div id='question-number'></div>
-    <div id='actual-question'></div>
-    <button onclick= "checkAnswer('mc-1')" id='mc-1'></button>
-    <button onclick= "checkAnswer('mc-2')" id='mc-2'></button>
-    <button onclick= "checkAnswer('mc-3')" id='mc-3'></button>
-    <button onclick= "checkAnswer('mc-4')" id='mc-4'></button>
+    <span align = "center" id='category-title'></span>
+    <span id='difficulty-title'>></span>
+    <span id='number-correct'>></span>
+    <span align = "center"><div id='question-number'></div>
+    <div  id='actual-question'></div></span>
+    <div align = "center"><button onclick= "checkAnswer('mc-1')" id='mc-1'></button></div>
+    <div align = "center"><button onclick= "checkAnswer('mc-2')" id='mc-2'></button></div>
+    <div align = "center"><button onclick= "checkAnswer('mc-3')" id='mc-3'></button></div>
+    <div align = "center"><button onclick= "checkAnswer('mc-4')" id='mc-4'></button></div>
   </div>
 
   <div class = "toggle-content" id= "play-again-page">
-    <div id='amount-correct'></div>
-    <button onclick="playAgain()">Play Another Game</div>
+    <div align = "center" id='amount-correct'></div>
+    <div align = "center"><button onclick="playAgain()">Play Another Game</button></div>
   </div>
-
-
-
-
-
 
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
