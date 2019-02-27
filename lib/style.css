@@ -120,8 +120,8 @@ button:enabled:hover {
 	width: auto;
 	length: auto;
 	background-color: white;
-	color: purple;
 }
+
 #actual-question{
 	font-size: 30px;
 }
