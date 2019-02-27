@@ -21,28 +21,24 @@
   </div>
 
   <div align = "center" class = "toggle-content" id="registration-page">
-      Name:<br>
-      <input type="text" id="name-register">
-      <br>
-      Email:<br>
-      <input type="text" id="email-register">
-      <br>
-      Password:<br>
-      <input type="password" id= "password-register">
-      <br>
-      Password Confirmation:<br>
-      <input type="password" id="password-confirmation-register">
+    <h1 align = "center">Create Your Account</h1>
+      <input  placeholder= "Name" type="text" id="name-register">
+      <br><br>
+      <input placeholder = "Email" type="text" id="email-register">
+      <br><br>
+      <input placeholder = "Password" type="password" id= "password-register">
+      <br><br>
+      <input placeholder = "Password Confirmation" type="password" id="password-confirmation-register">
       <br><br>
       <button onclick="registerUser()">Register</button>
   </div>
 
   <div align = "center" class = "toggle-content" id="logIn-page">
-      Email:<br>
-      <input type="text" id="email-login">
-      <br>
-      Password:<br>
-      <input type="password" id="password-login">
-      <br>
+    <h1 align = "center">Log In To Play</h1>
+      <input placeholder= "Email" type="text" id="email-login">
+      <br><br>
+      <input  placeholder= "Password" type="password" id="password-login">
+      <br><br>
       <input type="checkbox" onclick="checkbox()">Show Password
       <br><br>
       <button onclick="logInUser()">Log In</button>
@@ -122,7 +118,14 @@
 
   <div class = "toggle-content" id= 'leaderboard-page'>
     <h2 align = "center" id = 'lb-must-log-in'></h2>
-    <table id = "leaderboard-table"></table>
+    <table id = "leaderboard-table">
+      <tr id = "headers-lb">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Total Points</th>
+      </tr>`
+    </table>
   </div>
 
     <script
