@@ -94,8 +94,9 @@
   </div>
 
   <div class = "toggle-content" id="display-questions">
-    <span><div align = "center" id='category-title'></div>
-    <div align = "center" id='difficulty-title'></div></span>
+    <span align = "center" id='category-title'></span>
+    <span id='difficulty-title'>></span>
+    <span id='number-correct'>></span>
     <span align = "center"><div id='question-number'></div>
     <div  id='actual-question'></div></span>
     <div align = "center"><button onclick= "checkAnswer('mc-1')" id='mc-1'></button></div>
@@ -108,11 +109,6 @@
     <div align = "center" id='amount-correct'></div>
     <div align = "center"><button onclick="playAgain()">Play Another Game</button></div>
   </div>
-
-
-
-
-
 
     <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
