@@ -97,9 +97,8 @@
   </div>
 
   <div class = "toggle-content" id="display-questions">
-    <span align = "center" id='category-title'></span>
-    <span id='difficulty-title'>></span>
-    <span id='number-correct'>></span>
+    <h2 align = "right"><g id='number-correct'></g></h2>
+    <h2 align = "center" id='category-title'></h2>
     <span align = "center"><div id='question-number'></div>
     <div  id='actual-question'></div></span>
     <div align = "center"><button onclick= "checkAnswer('mc-1')" id='mc-1'></button></div>
@@ -109,7 +108,11 @@
   </div>
 
   <div class = "toggle-content" id= "play-again-page">
-    <div align = "center" id='amount-correct'></div>
+    <h1 align = "center">Game Summary</h1>
+    <h2 align = "center" ><b>You Scored</b></h2>
+    <h2 align = "center" ><g id='amount-correct'></g></h2>
+    <h2 align = "center" ><b>Points</b></h2>
+    <br>
     <div align = "center"><button onclick="playAgain()">Play Another Game</button></div>
   </div>
 
