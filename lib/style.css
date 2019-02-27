@@ -93,3 +93,10 @@ button:enabled:hover {
   background-color: #D83F87;
   color: white;
 }
+
+#category-title{
+	font-size: 80px;
+}
+#difficulty-title{
+	font-size: 30px;
+}
