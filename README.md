@@ -1,5 +1,5 @@
 # Smartie Pants Front End
-production link: https://mstang15.github.io/trivia_fe/
+production link: https://megstang.github.io/trivia_fe/
 agile board link: https://github.com/mstang15/trivia_fe/projects/1
 
 This front end repo is written in javascript and it dogfoods the trivia_be API that I built as a Ruby on Rails API. 
